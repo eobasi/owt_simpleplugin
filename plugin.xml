@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<plugin>
+    <name>Simple Plugin</name>
+    <key>owt_simpleplugin</key>
+    <description>Simple plugin to greet logged in users.</description>
+    <author>Ebenezer Obasi</author>
+    <authorEmail>info@eobasi.com</authorEmail>
+    <authorUrl>http://www.oxwall.org/foundation</authorUrl>
+    <developerKey>d7be028d4d1053345e0fd37184e5dadb</developerKey>
+    <build>1</build>
+    <copyright>(C) 2020 Ebenezer Obasi. All rights reserved.</copyright>
+	<license>The BSD License</license>
+    <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+</plugin>
