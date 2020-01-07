@@ -6,8 +6,8 @@
 ## COURSE OUTLINE ##
 
 * Setup Development Environment
-  - * IDE
-  - * Debug Mode
+  - IDE
+  - Debug Mode
  * Development Mode
  * Setup Oxwall Developer Account                                         
  * Simple Oxwall “Hello World” Plugin
