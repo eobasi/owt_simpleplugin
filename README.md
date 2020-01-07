@@ -54,7 +54,8 @@ The plugin root folder should contain plugin.xml file - this file should contain
 - licenseUrl
 
 #### plugin.xml Example
-```
+
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 
 <plugin>
@@ -73,7 +74,7 @@ The plugin root folder should contain plugin.xml file - this file should contain
 ```
 **Important**: Note these strings:
 
-```
+```xml
 <key>owt_simpleplugin</key>
 ...
 <developerKey>d7be028d4d1053345e0fd37184e5dadb</developerKey>
