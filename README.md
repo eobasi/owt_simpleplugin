@@ -39,6 +39,8 @@ Example plugin to demostrate Oxwall plugin file structure. Items ending with `/`
 - controllers
 - components
 
+Now we should install and activate our plugin but first, we should create the following files in the root folder of our plugin:
+
 ### plugin.xml
 The plugin root folder should contain plugin.xml file - this file should contain our plugin information. The information is written in xml tags and includes:
 - name
@@ -85,3 +87,21 @@ Those should be your `plugin key` and `developer key`, respectively. They should
 ### init.php
 
 Now let's create init.php file. Here we can add new routes and autoload class rules, bind events etc. Let's leave this file empty for now. This file will be executed every time your plugin is active.
+
+### install.php
+Code to execute during plugin installation.
+
+### uninstall.php
+Code to execute during plugin uninstallation.
+
+### activate.php
+Oxwall will execute this script during plugin activation.
+
+### deactivate.php
+Set of instructions to execute on plugin deactivation.
+
+## Plugin installation
+
+Yes, it's time to install your plugin before you actually started real development. Go to Admin area → Plugins → Available Plugins. Click Install on your new plugin.
+
+Voila - our plugin has been successfully installed and activated. This should create necessary database records for the normal functioning of the new plugin.
