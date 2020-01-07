@@ -1,9 +1,9 @@
 # OXWALL DEV TUTORIAL - COURSE 101: Beginner’s Guide to Oxwall Plugin Development
-# Simple plugin to greet logged in users.
-# BY: Ebenezer Obasi
-# [info@eobasi.com]
+* Simple plugin to greet logged in users.
+* BY: Ebenezer Obasi
+* [info@eobasi.com]
 
-#COURSE OUTLINE
+## COURSE OUTLINE
 	- Setup Development Environment
 	⁃	IDE
 	⁃	Debug Mode
