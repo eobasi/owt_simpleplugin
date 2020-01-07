@@ -1,1 +1,5 @@
+title: COURSE 101: Beginner’s Guide to Oxwall Plugin Development
+description: Create a simple plugin to greet logged in users.
+show_downloads: true
+google_analytics:
 theme: jekyll-theme-hacker
