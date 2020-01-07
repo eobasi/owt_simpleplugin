@@ -1,4 +1,4 @@
-## OXWALL DEV TUTORIAL - COURSE 101: Beginner’s Guide to Oxwall Plugin Development
+## COURSE 101: Beginner’s Guide to Oxwall Plugin Development - OXWALL DEV TUTORIAL
 
 Simple Oxwall plugin example for tutorial on how to develop oxwall plugin. This is a short Oxwall plugin development crash course that is based on a simple Oxwall plugin developed for the purpose of this course. Let's see how it was created step by step.
 
@@ -11,7 +11,8 @@ Simple Oxwall plugin example for tutorial on how to develop oxwall plugin. This 
  * Setup Oxwall Developer Account                                         
  * Simple Oxwall “Hello World” Plugin
  
- ## WATCH VIDEO TUTORIAL
+## WATCH VIDEO TUTORIAL
+ 
 [![WATCH VIDEO TUTORIAL](https://img.youtube.com/vi/SBaM78CxxMY/0.jpg)](https://www.youtube.com/watch?v=SBaM78CxxMY)
 
 ## Simple Oxwall “Hello World” Plugin
@@ -58,7 +59,7 @@ The plugin root folder should contain plugin.xml file - this file should contain
 
 <plugin>
     <name>Simple Plugin</name>
-    <key>owtsimpleplugin</key>
+    <key>owt_simpleplugin</key>
     <description>Simple Oxwall plugin example for tutorial on how to develop oxwall plugin</description>
     <author>Ebenezer Obasi</author>
     <authorEmail>info@eobasi.com</authorEmail>
@@ -70,7 +71,16 @@ The plugin root folder should contain plugin.xml file - this file should contain
     <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
 </plugin>
 ```
+**Important**: Note these strings:
 
-# init.php
+```
+<key>owt_simpleplugin</key>
+...
+<developerKey>d7be028d4d1053345e0fd37184e5dadb</developerKey>
+```
+
+Those should be your `plugin key` and `developer key`, respectively. They should be correct, otherwise you may face problems upon submitting your plugin or auto-updating it in the admin area.
+
+### init.php
 
 Now let's create init.php file. Here we can add new routes and autoload class rules, bind events etc. Let's leave this file empty for now. This file will be executed every time your plugin is active.
