@@ -3,13 +3,15 @@
 * BY: Ebenezer Obasi
 * [info@eobasi.com]
 
-## COURSE OUTLINE
-	- Setup Development Environment
-	⁃	IDE
-	⁃	Debug Mode
-	⁃	Development Mode
-	⁃	Setup Oxwall Developer Account                                         
-	- Simple Oxwall “Hello World” Plugin
+## COURSE OUTLINE ##
+
+* Setup Development Environment
+ ** IDE
+ * Debug Mode
+ * Development Mode
+ * Setup Oxwall Developer Account                                         
+ * Simple Oxwall “Hello World” Plugin
+
 
 # Plugin File System
 	⁃	Plugin Root / owt_simpleplugin
