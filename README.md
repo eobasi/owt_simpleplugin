@@ -13,7 +13,7 @@ Simple Oxwall plugin example for tutorial on how to develop oxwall plugin. This 
  
 ## WATCH VIDEO TUTORIAL
  
-[![WATCH VIDEO TUTORIAL](https://img.youtube.com/vi/SBaM78CxxMY/0.jpg)](https://www.youtube.com/watch?v=SBaM78CxxMY)
+[![WATCH VIDEO TUTORIAL](https://img.youtube.com/vi/SBaM78CxxMY/maxresdefault.jpg)](https://www.youtube.com/watch?v=SBaM78CxxMY)
 
 ## Simple Oxwall “Hello World” Plugin
 
