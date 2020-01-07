@@ -1,7 +1,7 @@
 # OXWALL DEV TUTORIAL - COURSE 101: Beginner’s Guide to Oxwall Plugin Development
 **Simple Oxwall plugin example for tutorial on how to develop oxwall plugin.**
- -- BY: Ebenezer Obasi
- -- [info@eobasi.com]
+ - BY: Ebenezer Obasi
+ - [info@eobasi.com]
 
 ## COURSE OUTLINE ##
 
@@ -30,7 +30,7 @@
 	⁃	components
 
 
-# Plugin.xml
+## Plugin.xml
 	⁃	name
 	⁃	key
 	⁃	description
