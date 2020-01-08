@@ -1,4 +1,4 @@
-## OWT101: Beginner’s Guide to Oxwall Plugin Development
+# OWT101: Beginner’s Guide to Oxwall Plugin Development
 
 Simple Oxwall plugin example for tutorial on how to develop oxwall plugin. This is a short Oxwall plugin development crash course that is based on a simple Oxwall plugin developed for the purpose of this course. Let's see how it was created step by step.
 
