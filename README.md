@@ -105,3 +105,57 @@ Set of instructions to execute on plugin deactivation.
 Yes, it's time to install your plugin before you actually started real development. Go to Admin area → Plugins → Available Plugins. Click Install on your new plugin.
 
 Voila - our plugin has been successfully installed and activated. This should create necessary database records for the normal functioning of the new plugin.
+
+## Add "Hello, Greeting" Box to plugin
+
+Open the `init.php` file you have created earlier and copy the following code into it:
+
+```php
+//function to display greeting box
+function owt_simpleplugin_greeting_box()
+{
+    //check if user is authenticated
+    if( !OW::getUser()->isAuthenticated() )
+    {
+        //return function if user is not logged in
+        return;
+    }
+
+    $userId = OW::getUser()->getId(); //get user Id
+    $displayName = BOL_UserService::getInstance()->getDisplayName( $userId ); //get user display name
+    $siteName = OW::getConfig()->getValue('base', 'site_name'); //get site name
+
+    //echo html message box
+    echo "<div class='owt_simpleplugin_greeting_box'>
+        Hello, {$displayName}! Welcome back to {$siteName}.
+        <a href='#!' class='close'>X</a>
+    </div>";
+
+    //onload javascript code
+    OW::getDocument()->addOnloadScript("
+        $('.close', '.owt_simpleplugin_greeting_box').click(function(){
+            $('.owt_simpleplugin_greeting_box').remove();
+        });
+    ");
+
+    //add css style declaration
+    OW::getDocument()->addStyleDeclaration("
+        .owt_simpleplugin_greeting_box{
+            border: solid 1px #aaddff;
+            display:block;
+            padding: 30px;
+            margin: 10px 0px;
+            color: #aaddee;
+        }
+        .owt_simpleplugin_greeting_box .close{
+            float: right;
+            color: #ff0000;
+            font-weight:bold;
+        }
+    ");
+}
+
+//bind function to top page content event
+OW::getEventManager()->bind('base.add_page_top_content', 'owt_simpleplugin_greeting_box');
+```
+What the above code does is to add a html greeting box at the top of your page when it loads. Let's see how it's done.
